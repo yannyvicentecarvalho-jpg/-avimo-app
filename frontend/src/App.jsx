@@ -4,7 +4,7 @@ import './App.css';
 import Login from './components/Login';
 import Dashboard from './components/Dashboard';
 
-const API_URL = 'http://localhost:3000/api';
+const API_URL = import.meta.env.VITE_API_URL || 'https://3000-ih5fsoeadibt8lcir8vus-10153912.us1.manus.computer/api';
 
 function App() {
   const [token, setToken] = useState(localStorage.getItem('token'));
